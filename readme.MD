@@ -23,22 +23,22 @@ This module is going to create the following resources. for HA we are going to g
 * environment (Mandatory): User must supply their environment name.
 * vpc_cidr (Mandatory): User must supply their VPC CIDR.
 * enable_dns_hostnames (Optional): defaults to true.
-* common_tags (Optional): Default is empty. User can supply tags in list(string) format.
-* vpc_tags (Optional): Default is empty. User can supply tags in list(string) format.
-* igw_tags (Optional): Default is empty. User can supply tags in list(string) format.
+* common_tags (Optional): Default is empty. User can supply tags in map(string) format.
+* vpc_tags (Optional): Default is empty. User can supply tags in map(string) format.
+* igw_tags (Optional): Default is empty. User can supply tags in map(string) format.
 * public_subnet_cidrs (Mandatory): User must supply only 2 valid public subnet CIDR.
-* public_subnet_tags (Optional): Default is empty. User can supply tags in list(string) format.
+* public_subnet_tags (Optional): Default is empty. User can supply tags in map(string) format.
 * private_subnet_cidrs (Mandatory): User must supply only 2 valid private subnet CIDR.
-* private_subnet_tags (Optional): Default is empty. User can supply tags in list(string) format.
+* private_subnet_tags (Optional): Default is empty. User can supply tags in map(string) format.
 * database_subnet_cidrs (Mandatory): User must supply only 2 valid database subnet CIDR.
-* database_subnet_tags (Optional): Default is empty. User can supply tags in list(string) format.
-* db_subnet_group_tags (Optional): Default is empty. User can supply tags in list(string) format.
-* nat_gateway_tags (Optional): Default is empty. User can supply tags in list(string) format.
-* public_route_table_tags (Optional): Default is empty. User can supply tags in list(string) format.
-* private_route_table_tags (Optional): Default is empty. User can supply tags in list(string) format.
-* database_route_table_tags (Optional): Default is empty. User can supply tags in list(string) format.
+* database_subnet_tags (Optional): Default is empty. User can supply tags in map(string) format.
+* db_subnet_group_tags (Optional): Default is empty. User can supply tags in map(string) format.
+* nat_gateway_tags (Optional): Default is empty. User can supply tags in map(string) format.
+* public_route_table_tags (Optional): Default is empty. User can supply tags in map(string) format.
+* private_route_table_tags (Optional): Default is empty. User can supply tags in map(string) format.
+* database_route_table_tags (Optional): Default is empty. User can supply tags in map(string) format.
 * is_peering_required (Optional): defaults to false
-* vpc_peering_tags (Optional): Default is empty. User can supply tags in list(string) format.
+* vpc_peering_tags (Optional): Default is empty. User can supply tags in map(string) format.
 
 # Outputs
 * vpc_id: VPC ID created
